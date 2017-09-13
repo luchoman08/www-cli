@@ -1,31 +1,17 @@
-import { Component , OnInit } from '@angular/core';
-import { Hero } from './hero';
-import { HeroService } from './hero.service';
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  providers: [HeroService],
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent implements OnInit {
-  heroes: Hero[];
-  title = 'My First Angular App';
-  selectedHero: Hero
+import { Component } from '@angular/core';
 
-  constructor(private heroService: HeroService) { 
-    
-  }
-  getHeroes(): void {
-    this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
-  }
- 
-  ngOnInit(): void {
-    this.getHeroes();
-  }
- 
-  onSelect(hero){
-    this.selectedHero = hero;
-  }
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html' ,
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  title = 'Tour of Heroes';
 }
 
 
+/*
+Copyright 2017 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

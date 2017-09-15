@@ -1,0 +1,40 @@
+            html{
+                /*font-size="18px";*/
+            }
+            .nav-custom{
+                font-size:1.7rem;
+                color:#FFF;
+                background-color:#333;
+                padding:0.6rem;
+                border-radius: 3px;
+                margin-top: 3rem;
+                box-shadow: 0 0 10px #888888;
+            }
+            .historia{
+                margin-top:1rem;   
+                border-top: 2px;
+                box-shadow: 0 0 10px #888888;
+            }
+            .historia > div:last-child {
+                 border-bottom: 2px solid;
+            }
+            .historia > div:first-child {
+                border-top: 2px solid;
+            }
+            
+
+            .historia > div{
+                border: 1px solid #333;
+                padding: 0.5rem;
+                color: #333;
+            }
+            .historia > div > span, .nav-custom > span{
+                font-weight: bold;
+            }
+            
+            @media screen and (min-width: 800px) {
+                
+                .historia > div:nth-child(2){
+                    border-top: 2px solid;
+                }
+            }

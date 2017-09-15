@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="nav-custom col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <span>Nombre HU:</span> {{ historia["Nombre de HU"]}}    <span></span>
+                </div>
+            </div>
+            <div class = "row historia">
+                <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <span>Identificación:</span> {{historia.Identificador}}
+                </div>
+                <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <span>Autor:</span> {{ historia.Autor }}
+                </div>
+                <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <span>Iteracion:</span> {{ historia.Iteracion }}
+                </div>
+                <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <span>Responsables:</span> {{ historia.responsable }}
+                </div>
+                <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <span>Fecha de creación:</span> {{historia["Fecha de creacion"]}}
+                </div>
+                <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <span>Fecha de modificación:</span> {{historia["Fecha de modificacion"]}}
+                </div>
+                <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <span>Actor(es):</span> {{ historia["Actor(es)"] }}
+                </div>
+                <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <span>Responsables:</span> {{ historia["Responsables"] }}
+                </div>
+                 <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <span>Puntuación backend:</span> {{ historia["Puntos backend"] }}
+                </div>
+                <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <span>Puntuación frontend:</span> {{ historia["Puntos frontend"] }}
+                </div>
+                <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <span>Descripcion:</span> {{ historia.Descripcion }}
+                </div>
+                 <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <span>Observaciones:</span> {{ historia.Observaciones }}
+                </div>
+                
+                <!--Timestamp	Nombre de HU	Puntos asignados	Dependencia	Actor(es)
+                Módulo	ID/Prioridad	Responsables	Iteración	Tiempo real	Clase	Descripción	Observaciones		
+               -->
+                
+            </div>
+        </div>
+        <!--<audio style="display:none:" autoplay>
+          <source src="https://notificationsounds.com/notification-sounds/you-wouldnt-believe-510/download/mp3" type="audio/mpeg">
+        </audio>-->
+       <ul class="pagination ">
+          <li (click) = "anteriorHistoria()"><a> &laquo;</a></li>
+          <li (click) = "siguienteHistoria()"><a>&raquo;</a></li>
+       </ul>
+
+            
+            
+            
+
+
+
